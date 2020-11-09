@@ -3,6 +3,7 @@ Write a function alphabetSoup(str) that takes a string and returns a string with
 the letters in alphabetical order. Assume the input will not contain numbers or punctuation.
 Hint: Check out split(), sort() and join() methods at 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
@@ -35,5 +36,21 @@ console.log(result) // "ghimmnorstyy"
 
 function alphabetSoup(str) {
 	//Your code here
-	
-}
+	let words = str.split('');
+	console.log(words);
+	let wordSrt = words.sort();
+	console.log(wordSrt);
+	let jnAll = wordSrt.join('');
+	console.log(jnAll);
+	let trmWords = jnAll.trim('');
+	console.log(trmWords);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  alphabetSoup("i am happy today");
