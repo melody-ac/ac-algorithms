@@ -1,6 +1,6 @@
 /*
 
-Given a string, swap the case of each character and retunr it.
+Given a string, swap the case of each character and return it.
 Assume the string has only letters.
 
 Hint 1: Check out indexOf() method at
@@ -31,4 +31,17 @@ console.log(result) // "oH, hELLO!!"
 
 function swapCase(str) {
 	// Your code
-}
+	var newLetters = "";
+	for (var i = 0; i< str.length; i++){
+    if(str[i] === str[i].toLowerCase()){
+            newLetters += str[i].toUpperCase();
+        }else {
+            newLetters  += str[i].toLowerCase();
+        }
+    }
+   console.log(newLetters);
+  return newLetters;
+	}
+
+// swapCase("Hello World")
+swapCase("Hello World");
